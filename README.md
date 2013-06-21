@@ -1,4 +1,5 @@
 左右滑动调用
+![image](https://github.com/chifan/ZItem/blob/master/info.png)
 使用方法：
 编写布局文件
 
