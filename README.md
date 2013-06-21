@@ -1,5 +1,6 @@
-左右滑动调用
 ![image](https://github.com/chifan/ZItem/raw/master/info.png)
+
+左右滑动调用
 使用方法：
 编写布局文件
 
@@ -13,8 +14,8 @@
     </com.zhu.zlistview.ZItem>
     
 在代码中
+
 	ZItem zitem = (ZItem) findViewById(R.id.textView1);
-  	
 	zitem.setZItemListener(new ZItemListener() {
 			
 		@Override
