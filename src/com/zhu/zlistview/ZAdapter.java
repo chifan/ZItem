@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
@@ -54,6 +55,7 @@ public class ZAdapter extends BaseAdapter{
 				// TODO Auto-generated method stub
 				xitem.removeAllViews();
 				View v = LayoutInflater.from(context).inflate(R.layout.item1, null);
+				v.setAnimation(AnimationUtils.loadAnimation(context, R.anim.push_right_in));
 				xitem.addView(v);
 			}
 			
@@ -62,6 +64,7 @@ public class ZAdapter extends BaseAdapter{
 				// TODO Auto-generated method stub
 				xitem.removeAllViews();
 				View v = LayoutInflater.from(context).inflate(R.layout.item2, null);
+				v.setAnimation(AnimationUtils.loadAnimation(context, R.anim.push_left_in));
 				v.findViewById(R.id.button1).setOnClickListener(new OnClickListener() {
 					
 					@Override
