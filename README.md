@@ -1,6 +1,7 @@
 左右滑动调用
 使用方法：
 编写布局文件
+
     <com.zhu.zlistview.ZItem
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
@@ -11,9 +12,9 @@
     </com.zhu.zlistview.ZItem>
     
 在代码中
-Item xitem = (ZItem) findViewById(R.id.textView1);
+	ZItem zitem = (ZItem) findViewById(R.id.textView1);
   	
-xitem.setZItemListener(new ZItemListener() {
+	zitem.setZItemListener(new ZItemListener() {
 			
 		@Override
 		public void onRight() {
@@ -24,6 +25,5 @@ xitem.setZItemListener(new ZItemListener() {
 		@Override
 		public void onLeft() {
 			// TODO Auto-generated method stub
-
-    }
-);
+		}
+	});
